@@ -1,0 +1,52 @@
+                                                                                                                         <html>
+<style>
+	body
+	{	text-align:-webkit-center;
+		background-color: lightgrey;
+	}
+	#details{	background-color:lightyellow;
+			padding:30px;
+			margin:-7px;
+		}
+	#person{	background-color:lightblue;
+			padding:30px;
+			margin:-7px;
+			font-weight: bold;
+    			font-style: italic;
+		}
+	#email{		font-size:15px;
+			background-color:pink;
+			border:5px solid lightpink;
+			padding:10px;
+			margin:10px;
+		}
+</style>
+<body>
+	<div id="details">
+		<button onclick="myDetails()">Click Here for Details</button>
+	</div>
+	<br><br><br><div id="person">
+		<img onmouseover="largePic(this)" onmouseout="normPic(this)" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/733b5da9-efe6-4697-a4f9-9e9d4975f828/de8g74b-0127ef26-febe-4074-8ac3-b74dbde3b0a3.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzczM2I1ZGE5LWVmZTYtNDY5Ny1hNGY5LTllOWQ0OTc1ZjgyOFwvZGU4Zzc0Yi0wMTI3ZWYyNi1mZWJlLTQwNzQtOGFjMy1iNzRkYmRlM2IwYTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.mN0QqkKs8ZgCGC6w5chXHPUgjd7Yi3z1m6Of2x-serc" height=300px alt="Yuzuru Hanyu">
+		<br><br><text onmouseover="resize(this,'125%')" onseout="resize(this,'100%')">ITACHI UCHIHA</text>
+	</div>
+	<br><br><div id="email">
+		&#169;Official Email Id: sulagna_202000560@smit.smu.edu.in
+	</div>
+<script>
+	function myDetails()
+	{	alert("Name: Sulagna Adhikary");
+		alert("Reg No:202000560");
+	}
+	function largePic(x)
+	{	x.style.height="450px";
+	}
+	function normPic(x)
+	{	x.style.height="300px";
+	}
+	function resize(ele,percent)
+	{	ele.style.fontSize=percent;
+	}
+
+</script>
+</body>
+</html>
